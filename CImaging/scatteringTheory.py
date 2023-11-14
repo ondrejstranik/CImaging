@@ -1,4 +1,4 @@
-''' scalar scattering 
+''' scalar scattering 2D
 for computational imaging
 Stranik 23-11-14'''
 #%% packages
