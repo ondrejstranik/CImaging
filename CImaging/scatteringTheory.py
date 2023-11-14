@@ -11,6 +11,7 @@ from scipy.sparse.linalg import inv
 # %% function definition
 
 def scatter(alpha,k,r0,r):
+
     ''' field of a scatter '''
 
     #distanceR = np.linalg.norm(r - r0)
@@ -43,7 +44,7 @@ alpha0 = 1
 wavelength = 500 # [nm]
 r0 = np.array([-10,50])*dspace #  position of the source
 
-k = 2*np.pi/500 # [nm-1]
+k = 2*np.pi/wavelength # [nm-1]
 
 soE = scatter(alpha0,k,r0,r)
 
@@ -59,7 +60,7 @@ viewer.add_points(r0/dspace,opacity=0.5, name='source', face_color='red')
 
 # low density
 #scatterDensity = 0.002
-# higer density
+# high density
 scatterDensity = 0.01
 
 # random positioning of the spheres
