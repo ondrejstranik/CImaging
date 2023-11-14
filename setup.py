@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="HSIplasmon",
+    name="CImaging",
     version="0.0.1",
     author="OndrejStranik",
     author_email="ondra.stranik@gmail.com",
-    description="package to sense with plasmonic structures",
+    description="package with scripts for computational imaging",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ondrejstranik/HSIplasmon",
+    url="https://github.com/ondrejstranik/CImaging",
     packages = setuptools.find_packages(),
     install_requires = [
         'numpy'],
