@@ -1,5 +1,5 @@
-
-''' testing scripts for running napari
+'''
+ testing scripts for running napari
 (openGl compatibility)
 '''
 #%% package import
