@@ -30,6 +30,9 @@ T= 1*S
 # iteration vector
 v = np.exp(1j*2*np.pi*np.random.rand(N,N))
 
+napari.view_image(S, colormap='turbo')
+
+
 # %% power method of eigen vector search
 
 for ii in range(nIter):
@@ -44,3 +47,5 @@ for ii in range(nIter):
 res = nip.catE(S,np.abs(v),np.abs(nip.ft(v)))
 napari.view_image(res, colormap='turbo')
 
+
+# %%

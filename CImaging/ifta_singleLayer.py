@@ -17,6 +17,7 @@ import napari
 Niter = 50 # number of ifta iteration
 Nps = 8 # number of steps in the phase
 fnameR = 'logo.png'
+ffolder = r'C:\Users\ostranik\Documents\GitHub\CImaging\CImaging'
 imRpixel = 800 # max number of pixel 
 
 
@@ -32,7 +33,7 @@ print('Design height = {} um'.format(w/(npol-1)))
 #%% image pre-processing
 
 # read file
-oImage = imread(fnameR)[:,:,0:3]
+oImage = imread(ffolder + '\\' + fnameR)[:,:,0:3]
 
 #make black and white image
 imR = np.mean(oImage,axis=2)
@@ -114,6 +115,7 @@ finali_image /= np.max(finali_image)
 
 viewer.add_image(finali_image,name='final image', colormap='turbo')
 
+napari.run()
 
 # save the data
 #imsave('uverse_mask2000x2000.tiff',phasemask)

@@ -207,3 +207,5 @@ napari.view_image(pt2, name = 'side alignment')
 
 
 
+
+# %%
